@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    
+<head>
+        <!--====== Required meta tags ======-->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="shoes">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--====== Title ======-->
+        <title>Divya Shopee</title>
+        <!--====== Favicon Icon ======-->
+        <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/png">
+        <!--====== Google Fonts ======-->
+        <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet">
+        <!--====== Flaticon css ======-->
+        <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_pesco.css">
+        <!--====== FontAwesome css ======-->
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+        <!--====== Bootstrap css ======-->
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+        <!--====== Slick-popup css ======-->
+        <link rel="stylesheet" href="assets/vendor/slick/slick.css">
+        <!--====== Nice Select css ======-->
+        <link rel="stylesheet" href="assets/vendor/nice-select/css/nice-select.css">
+        <!--====== Magnific-popup css ======-->
+        <link rel="stylesheet" href="assets/vendor/magnific-popup/dist/magnific-popup.css">
+        <!--====== Jquery UI css ======-->
+        <link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.min.css">
+        <!--====== Animate css ======-->
+        <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+        <!--====== Default css ======-->
+        <link rel="stylesheet" href="assets/css/default.css">
+        <!--====== Style css ======-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+            .slider {
+                width: 100vw; /* Full width of the viewport */
+                height: 70vh; /* Height for desktop: 70% of viewport height */
+                position: relative; /* Position for absolute children */
+                overflow: hidden; /* Hide overflow */
+            }
+
+            .slides {
+                display: flex; /* Horizontal alignment */
+                transition: transform 0.5s ease; /* Smooth transition */
+            }
+
+            .slide {
+                min-width: 100vw; /* Each slide takes full width */
+                height: 100%; /* Slide height fills the slider's height */
+                position: relative; /* Positioning context for img */
+            }
+
+            .slide img {
+                width: 100%; /* Full width image */
+                height: 100%; /* Full height */
+                object-fit: cover; /* For desktop: Fill the slider without stretching */
+                display: block; /* Remove bottom space from images */
+            }
+
+            .controls {
+                position: absolute; /* Absolute positioning */
+                top: 50%; /* Center vertically */
+                width: 100%; /* Full width */
+                display: flex; /* Flex for controls */
+                justify-content: space-between; /* Space between controls */
+                transform: translateY(-50%); /* Center control vertically */
+            }
+
+            .control {
+                background-color: rgba(0, 0, 0, 0.5); /* Control background */
+                color: white; /* Control text color */
+                border: none; /* No border */
+                padding: 10px; /* Padding */
+                cursor: pointer; /* Pointer cursor */
+            }
+
+            /* Media query for mobile devices */
+            @media (max-width: 768px) {
+                .slider {
+                    height: 30vh; /* Height for mobile: 50% of viewport height */
+                }
+                .slide {
+                    height: 100%; /* Slide height fills the slider */
+                }
+                .slide img {
+                    object-fit: cover; /* Cover the slide without cropping, ensuring no white space */
+                    height: 100%; /* Ensure the image fills the height of the slider */
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--====== Preloader ======-->
+
+        <!-- <div class="preloader">
+            <div class="loader">
+                <img src="assets/images/loader.gif" alt="Loader">
+            </div>
+        </div> -->
+        <!--======  Start Overlay  ======-->
+        <div class="offcanvas__overlay"></div>
+        <!--====== Start Sidemenu-wrapper-cart Area ======-->
+        <div class="sidemenu-wrapper-cart">
+            <div class="sidemenu-content">
+                <div class="widget widget-shopping-cart">
+                    <h4>My cart</h4>
+                    <div class="sidemenu-cart-close"><i class="far fa-times"></i></div>
+                    <div class="widget-shopping-cart-content">
+                        <ul class="pesco-mini-cart-list">
+                            <li class="sidebar-cart-item">
+                                <a href="#" class="remove-cart"><i class="far fa-trash-alt"></i></a>
+                                <a href="#">
+                                    <img src="assets/images/products/cart-1.jpg" alt="cart image">
+                                    leggings with mesh panels
+                                </a>
+                                <span class="quantity">1 × <span><span class="currency">$</span>940.00</span></span>
+                            </li>
+                            <li class="sidebar-cart-item">
+                                <a href="#" class="remove-cart"><i class="far fa-trash-alt"></i></a>
+                                <a href="#">
+                                    <img src="assets/images/products/cart-2.jpg" alt="cart image">
+                                    Summer dress with belt
+                                </a>
+                                <span class="quantity">1 × <span><span class="currency">$</span>940.00</span></span>
+                            </li>
+                            <li class="sidebar-cart-item">
+                                <a href="#" class="remove-cart"><i class="far fa-trash-alt"></i></a>
+                                <a href="#">
+                                    <img src="assets/images/products/cart-3.jpg" alt="cart image">
+                                    Floral print sundress
+                                </a>
+                                <span class="quantity">1 × <span><span class="currency">$</span>940.00</span></span>
+                            </li>
+                            <li class="sidebar-cart-item">
+                                <a href="#" class="remove-cart"><i class="far fa-trash-alt"></i></a>
+                                <a href="#">
+                                    <img src="assets/images/products/cart-4.jpg" alt="cart image">
+                                    Sheath Gown Red Colors
+                                </a>
+                                <span class="quantity">1 × <span><span class="currency">$</span>940.00</span></span>
+                            </li>
+                        </ul>
+                        <div class="cart-mini-total">
+                            <div class="cart-total">
+                                <span><strong>Subtotal:</strong></span> <span class="amount">1 × <span><span class="currency">$</span>940.00</span></span>
+                            </div>
+                        </div>
+                        <div class="cart-button-box">
+                            <a href="checkout.html" class="theme-btn style-one">Proceed to checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--====== End Sidemenu-wrapper-cart Area ======-->
+        <!--====== Main Bg  ======-->
+        <main class="main-bg">
+            <!--====== Start Header Section ======-->
+            <header class="header-area">
+                <!--===  Search Header Main  ===-->
+                <div class="search-header-main" style="background-color:black">
+                    <div class="container">
+                        <!--===  Search Header Inner  ===-->
+                        <div class="search-header-inner">
+                            <!--=== Site Branding  ===-->
+                            <div class="site-branding">
+                                <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo-main.jpg" alt="Logo"></a>
+                            </div>
+                            <!--===  Product Search Category  ===-->
+                            <div class="product-search-category">
+                                <form action="#">
+                                    <!-- <select class="wide">
+                                        <option>All Categories</option>
+                                        <option>Man Shirts</option>
+                                        <option>Denim Jeans</option>
+                                        <option>Casual Suit</option>
+                                        <option>Summer Dress</option>
+                                        <option>Sweaters</option>
+                                        <option>Jackets</option>
+                                    </select> -->
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Enter Search Products" />
+                                        <button class="search-btn"><i class="far fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--===  Hotline Support  ===-->
+                            <div class="hotline-support item-rtl">
+                                <div class="icon">
+                                    <i class="flaticon-support"></i>
+                                </div>
+                                <div class="info">
+                                    <span>24/7 Support</span>
+                                    <h5><a href="tel:+941234567894">+94 123 4567 894</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--===  Header Navigation  ===-->
+                <div class="header-navigation style-one">
+                    <div class="container">
+                        <!--=== Primary Menu ===-->
+                        <div class="primary-menu">
+                            <div class="site-branding d-lg-none d-block">
+                                <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo-main.jpg" alt="Logo"></a>
+                            </div>
+                            <!--=== Nav Inner Menu ===-->
+                            <div class="nav-inner-menu">
+                                <!--=== Main Category ===-->
+                                <!-- <div class="site-branding">
+                                    <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo-main.jpeg" alt="Logo" height="100px" width="100"></a>
+                                </div> -->
+                                <!--=== Pesco Nav Main ===-->
+                                <div class="pesco-nav-main">
+                                    <!--=== Pesco Nav Menu ===-->
+                                    <div class="pesco-nav-menu">
+                                        <!--=== Responsive Menu Search ===-->
+                                        <div class="nav-search mb-40 d-block d-lg-none">
+                                            <div class="form-group">
+                                                <input type="search" class="form_control" placeholder="Search Here" name="search">
+                                                <button class="search-btn"><i class="far fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                        <!--=== Responsive Menu Tab ===-->
+                                        <div class="pesco-tabs style-three d-block d-lg-none">
+                                            <!-- <ul class="nav nav-tabs mb-30" role="tablist">
+                                                <li>
+                                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav1" role="tab">Menu</button>
+                                                </li>
+                                                <li>
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav2" role="tab">Category</button>
+                                                </li>
+                                            </ul> -->
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="nav1">
+                                                    <nav class="main-menu">
+                                                        <ul>
+                                                            <li class="menu-item"><a href="#">Home</a></li>
+                                                            <li class="menu-item has-children"><a href="shop.html">Men</a>
+                                                                <ul class="sub-menu">
+                                                                    <li><a href="shops.html">Slippers</a></li>
+                                                                    <li><a href="shop-details.html">Crocs</a></li>
+                                                                    <li><a href="cart.html">Sports Shoes</a></li>
+                                                                    <li><a href="checkout.html">Casual Shoes</a></li>
+                                                                    <li><a href="wishlists.html">Canvas Shoes</a></li>
+                                                                    <li><a href="wishlists.html">Sandals/Floaters</a></li>
+                                                                    <li><a href="wishlists.html">Sneakers</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item has-children"><a href="shop.html">Women</a>
+                                                                <ul class="sub-menu">
+                                                                    <li><a href="blogs.html">Formal Shoes</a></li>
+                                                                    <li><a href="blog-details.html">Casual Shoes</a></li>
+                                                                    <li><a href="blog-details.html">Boots</a></li>
+                                                                    <li><a href="blog-details.html">Sandals</a></li>
+                                                                    <li><a href="blog-details.html">Floaters</a></li>
+                                                                    <li><a href="blog-details.html">Running Shoes</a></li>
+                                                                    <li><a href="blog-details.html">Sneakers</a></li>
+                                                                    <li><a href="blog-details.html">Wedges</a></li>
+                                                                    <li><a href="blog-details.html">Heels</a></li>
+                                                                    <li><a href="blog-details.html">Slipers/Chapal</a></li>
+                                                                    <li><a href="blog-details.html">Bellies</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item has-children"><a href="shop.html">Kids</a>
+                                                                <ul class="sub-menu">
+                                                                    <li><a href="about-us.html">Clogs</a></li>
+                                                                    <li><a href="faq.html">Light Shoes</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav2">
+                                                    <div class="categori-dropdown-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="shops.html"> <img src="assets/images/icon/shirt.png" alt="Shirts">Man Shirts</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="shops.html"> <img src="assets/images/icon/denim.png" alt="Jeans">Denim Jeans</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="shops.html"> <img src="assets/images/icon/suit.png" alt="Suit">Casual Suit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="shops.html"> <img src="assets/images/icon/dress.png" alt="Dress">Summer Dress</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="shops.html"> <img src="assets/images/icon/sweaters.png" alt="Sweaters">Sweaters</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--===  Hotline Support  ===-->
+                                        <div class="hotline-support d-flex d-lg-none mt-30">
+                                            <div class="icon">
+                                                <i class="flaticon-support"></i>
+                                            </div>
+                                            <div class="info">
+                                                <span>24/7 Support</span>
+                                                <h5><a href="tel:+941234567894">+94 123 4567 894</a></h5>
+                                            </div>
+                                        </div>
+                                        <!--=== Main Menu ===-->
+                                        <nav class="main-menu d-none d-lg-block">
+                                            <ul>
+                                                <li class="menu-item"><a href="#">Home</a></li>
+                                                <li class="menu-item has-children"><a href="men.html">Men</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="shop.html">Slippers</a></li>
+                                                        <li><a href="shop.html">Crocs</a></li>
+                                                        <li><a href="shop.html">Sports Shoes</a></li>
+                                                        <li><a href="shop.html">Casual Shoes</a></li>
+                                                        <li><a href="shop.html">Canvas Shoes</a></li>
+                                                        <li><a href="shop.html">Sandals/Floaters</a></li>
+                                                        <li><a href="shop.html">Sneakers</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item has-children"><a href="women.html">Women</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="shop.html">Formal Shoes</a></li>
+                                                        <li><a href="shop.html">Casual Shoes</a></li>
+                                                        <li><a href="shop.html">Boots</a></li>
+                                                        <li><a href="shop.html">Sandals</a></li>
+                                                        <li><a href="shop.html">Floaters</a></li>
+                                                        <li><a href="shop.html">Running Shoes</a></li>
+                                                        <li><a href="shop.html">Sneakers</a></li>
+                                                        <li><a href="shop.html">Wedges</a></li>
+                                                        <li><a href="shop.html">Heels</a></li>
+                                                        <li><a href="shop.html">Slipers/Chapal</a></li>
+                                                        <li><a href="shop.html">Bellies</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item has-children"><a href="kids.html">Kids</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="about-us.html">Clogs</a></li>
+                                                        <li><a href="faq.html">Light Shoes</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--=== Nav Right Item ===-->
+                            <div class="nav-right-item style-one">
+                                <ul>
+                                    <li>
+                                        <div class="deals d-lg-block d-none"><i class="far fa-fire-alt"></i>Deal</div>
+                                    </li>
+                                    <li>
+                                        <div class="wishlist-btn d-lg-block d-none"><i class="far fa-heart"></i><span class="pro-count">12</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="cart-button d-flex align-items-center">
+                                            <div class="icon">
+                                                <i class="fas fa-shopping-bag"></i><span class="pro-count">01</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="navbar-toggler d-block d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header><!--====== End Header Section ======-->
+            <!--====== Start Hero Section ======-->
+            
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="assets/images/slider/slider1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/slider/slider2.png" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/slider/slider3.png" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="control" id="prev">❮</button>
+                    <button class="control" id="next">❯</button>
+                </div>
+            </div>
+
+
+
+            
+            
+            <!--====== End Hero Section ======-->
+            <!--====== Start Animated-headline Section ======-->
+            <section class="animated-headline-area primary-dark-bg pt-25 pb-25">
+                <div class="headline-wrap style-one">
+                    <span class="marquee-wrap">
+                        <span class="marquee-inner left">
+                            <span class="marquee-item"><b>Men</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Women</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Kids</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Slipper</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Crocs</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Sandal/Floaters</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Sports</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Canvas Shoes</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Sneakers</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Casual Shoes</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Loafers Shoes</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Formal Shoes</b><i class="fas fa-bahai"></i></span>
+                        </span>
+                        <span class="marquee-inner left">
+                            <span class="marquee-item"><b>Men</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Women</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Kids</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Slipper</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Crocs</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Sandal/Floaters</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Sports</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Canvas Shoes</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Sneakers</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Casual Shoes</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Loafers Shoes</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Formal Shoes</b><i class="fas fa-bahai"></i></span>
+                        </span>
+                        <span class="marquee-inner left">
+                            <span class="marquee-item"><b>Men</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Women</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Kids</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Slipper</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Crocs</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Sandal/Floaters</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Sports</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Canvas Shoes</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Sneakers</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Casual Shoes</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Loafers Shoes</b><i class="fas fa-bahai"></i></span>
+                            <span class="marquee-item"><b>Formal Shoes</b><i class="fas fa-bahai"></i></span>
+                        </span>
+                    </span>
+                </div>
+            </section>
+            <!--====== End Animated-headline Section ======-->
+
+            <section class="banner-section pt-60"></section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!--=== Section Title  ===-->
+                                <div class="section-title text-center mb-60">
+                                    <div class="sub-heading d-inline-flex align-items-center">
+                                        <!-- <i class="flaticon-sparkler"></i> -->
+                                        <span class="sub-title">Categories</span>
+                                        <!-- <i class="flaticon-sparkler"></i> -->
+                                    </div>
+                                    <h2>Browse Top Categories</h2>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <!--=== Banner Item ===-->
+                           <div class="style-one mb-40">
+                           
+                                <a href="men.html" class="category-link">
+                                    <img src="assets/images/category/men-category.png" alt="Men's Category" class="img-fluid img-fit">
+                                </a>
+                            
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <!--=== Banner Item ===-->
+                            <div class="style-one mb-40">
+                                <a href="women.html" class="category-link">
+                                <img src="assets/images/category/women-category.png" alt="Women's Category" class="img-fluid img-fit">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <!--=== Banner Item ===-->
+                            <div class="style-one mb-40">
+                                <a href="kids.html" class="category-link">
+                                <img src="assets/images/category/kids-category.png" alt="Kids's Category" class="img-fluid img-fit">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--====== End Banner Section ======-->
+            <!--====== Start Features Section ======-->
+            <section class="banner-promo-section pt-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!--=== Section Title  ===-->
+                            <div class="section-title text-center mb-60">
+                                <div class="sub-heading d-inline-flex align-items-center">
+                                    <!-- <i class="flaticon-sparkler"></i> -->
+                                    <span class="sub-title">New Collection</span>
+                                    <!-- <i class="flaticon-sparkler"></i> -->
+                                </div>
+                                <h2>Shop New Collection</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--=== Banner Item  ===-->
+                        <div class="col-xl-5">
+                            <div class="style-two mb-40">
+                                <!-- Replacing background image with an img tag -->
+                                <a href="men.html" class="category-link">
+                                <img src="assets/images/category/men-offer.png" alt="Men's Offer Banner" class="img-fluid img-fit">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7">
+                            <!--=== Banner Item  ===-->
+                            <div class="style-two mb-40">
+                                <!-- Replacing background image with an img tag -->
+                                <a href="women.html" class="category-link">
+                                <img src="assets/images/category/women-offer.png" alt="Women's Offer Banner" class="img-fluid img-fit">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7">
+                            <!--=== Banner Item  ===-->
+                            <div class="style-two mb-40">
+                                <!-- Replacing background image with an img tag -->
+                                <a href="shop.html" class="category-link">
+                                <img src="assets/images/category/big-sale-offer.png" alt="Kid's Offer Banner" class="img-fluid img-fit">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <!--=== Banner Item  ===-->
+                            <div class="style-two mb-40">
+                                <!-- Replacing background image with an img tag -->
+                                <a href="kids.html" class="category-link">
+                                <img src="assets/images/category/kids-offer.png" alt="Men's Offer Banner" class="img-fluid img-fit">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+              
+            <section class="brand-section pt-60 pb-60">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="section-title mb-50">
+                            <!--=== Section Title  ===-->
+                                <h2>We continue to expand with the trust of 10+ brand.</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="brand-button float-lg-end mb-60">
+                                <a href="index-2.html"><img src="assets/images/shop-by-brand.png" alt="Button"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brands-row">
+                        <!--=== Brand Item  ===-->
+                        <div class="single-brand-item">
+                            <a href="#" class="brand-img">
+                                <img src="assets/images/brand/brand-1.png" alt="Brand Image">
+                            </a>
+                        </div>
+                        <!--=== Brand Item  ===-->
+                        <div class="single-brand-item">
+                            <a href="#" class="brand-img">
+                                <img src="assets/images/brand/brand-2.png" alt="Brand Image">
+                            </a>
+                        </div>
+                        <!--=== Brand Item  ===-->
+                        <div class="single-brand-item">
+                            <a href="#" class="brand-img">
+                                <img src="assets/images/brand/brand-3.png" alt="Brand Image">
+                            </a>
+                        </div>
+                        <!--=== Brand Item  ===-->
+                        <div class="single-brand-item">
+                            <a href="#" class="brand-img">
+                                <img src="assets/images/brand/brand-4.png" alt="Brand Image">
+                            </a>
+                        </div>
+                        <!--=== Brand Item  ===-->
+                        <div class="single-brand-item">
+                            <a href="#" class="brand-img">
+                                <img src="assets/images/brand/brand-5.png" alt="Brand Image">
+                            </a>
+                        </div>
+                        <!--=== Brand Item  ===-->
+                        <div class="single-brand-item">
+                            <a href="#" class="brand-img">
+                                <img src="assets/images/brand/brand-6.png" alt="Brand Image">
+                            </a>
+                        </div>
+                        <!--=== Brand Item  ===-->
+                        <div class="single-brand-item">
+                            <a href="#" class="brand-img">
+                                <img src="assets/images/brand/brand-7.png" alt="Brand Image">
+                            </a>
+                        </div>
+                        <!--=== Brand Item  ===-->
+                        <div class="single-brand-item">
+                            <a href="#" class="brand-img">
+                                <img src="assets/images/brand/brand-8.png" alt="Brand Image">
+                            </a>
+                        </div>
+                        <!--=== Brand Item  ===-->
+                        <div class="single-brand-item">
+                            <a href="#" class="brand-img">
+                                <img src="assets/images/brand/brand-9.png" alt="Brand Image">
+                            </a>
+                        </div>
+                        <!--=== Brand Item  ===-->
+                        <div class="single-brand-item">
+                            <a href="#" class="brand-img">
+                                <img src="assets/images/brand/brand-10.png" alt="Brand Image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section><!--===== End Brand Section  ======-->
+           
+            <!--====== Start Testimonial Sections  ======-->
+            <section class="testimonial-section overflow-x-hidden pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!--=== Section Title  ===-->
+                            <div class="section-title text-center mb-60">
+                                <div class="sub-heading d-inline-flex align-items-center">
+                                    <!-- <i class="flaticon-sparkler"></i> -->
+                                    <span class="sub-title">What Our Clients Say About Us</span>
+                                    <!-- <i class="flaticon-sparkler"></i> -->
+                                </div>
+                                <h2>Testimonials</h2>
+                            </div>
+                        </div>
+                       
+                        <div class="col-lg-12">
+                            <div class="testimonial-slider-one">
+                                <div class="testimonial-item style-one">
+                                    <div class="testimonial-content">
+                                        <p>This inflatable dragon costume seemed perfect for Halloween! But upon inflating, it became clear the wings were uneven, causing me to spin uncontrollably like a rogue pool float. </p>
+                                        <div class="author-quote-item d-flex justify-content-between align-items-center">
+                                            <div class="author-item">
+                                                <div class="author-thumb">
+                                                    <img src="assets/images/testimonial/author-1.png" alt="author image">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h5>Rhodes Jhon</h5>
+                                                    <ul class="ratings rating5">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="quote-icon">
+                                                <i class="flaticon flaticon-right-quote"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item style-one">
+                                    <div class="testimonial-content">
+                                        <p>This inflatable dragon costume seemed perfect for Halloween! But upon inflating, it became clear the wings were uneven, causing me to spin uncontrollably like a rogue pool float. </p>
+                                        <div class="author-quote-item d-flex justify-content-between align-items-center">
+                                            <div class="author-item">
+                                                <div class="author-thumb">
+                                                    <img src="assets/images/testimonial/author-2.png" alt="author image">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h5>Rhodes Jhon</h5>
+                                                    <ul class="ratings rating5">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="quote-icon">
+                                                <i class="flaticon flaticon-right-quote"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item style-one">
+                                    <div class="testimonial-content">
+                                        <p>This inflatable dragon costume seemed perfect for Halloween! But upon inflating, it became clear the wings were uneven, causing me to spin uncontrollably like a rogue pool float. </p>
+                                        <div class="author-quote-item d-flex justify-content-between align-items-center">
+                                            <div class="author-item">
+                                                <div class="author-thumb">
+                                                    <img src="assets/images/testimonial/author-1.png" alt="author image">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h5>Rhodes Jhon</h5>
+                                                    <ul class="ratings rating5">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="quote-icon">
+                                                <i class="flaticon flaticon-right-quote"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item style-one">
+                                    <div class="testimonial-content">
+                                        <p>This inflatable dragon costume seemed perfect for Halloween! But upon inflating, it became clear the wings were uneven, causing me to spin uncontrollably like a rogue pool float. </p>
+                                        <div class="author-quote-item d-flex justify-content-between align-items-center">
+                                            <div class="author-item">
+                                                <div class="author-thumb">
+                                                    <img src="assets/images/testimonial/author-2.png" alt="author image">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h5>Rhodes Jhon</h5>
+                                                    <ul class="ratings rating5">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="quote-icon">
+                                                <i class="flaticon flaticon-right-quote"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--====== End Testimonial Sections  ======-->
+           
+            <!--====== Start Blog Sections  ======-->
+            
+            <!--====== Start Newsletter Sections  ======-->
+            <section class="newsletter-section">
+                <div class="newsletter-wrapper-two p-r z-1 pt-80 pb-85">
+                    <div class="newsletter-image-two"><img src="assets/images/newsletter.png" alt="newsletter image"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="section-content-box">
+                                    <!--=== Section Title  ===-->
+                                    <div class="section-title">
+                                     
+                                        <h2>Subscribe <span>newsletter</span> <br> to & get Every day discount</h2>
+                                    </div>
+                                    <form>
+                                        <input type="email" class="form_control" placeholder="Write your Email Address" name="email" required>
+                                        <button class="theme-btn style-one">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--====== End Newsletter Section ======-->
+            <!--====== Start Features Section ======-->
+            <section class="features-section pt-60 pb-35">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <!--=== Iconic Box Item ===-->
+                            <div class="iconic-box-item style-three mb-25">
+                                <div class="icon">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>Free Shipping</h5>
+                                    <p>You get your items delivered without any extra cost.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <!--=== Iconic Box Item ===-->
+                            <div class="iconic-box-item style-three mb-25">
+                                <div class="icon">
+                                    <i class="fas fa-microphone"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>Great Support 24/7</h5>
+                                    <p>Our customer support team is available around the clock </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <!--=== Iconic Box Item ===-->
+                            <div class="iconic-box-item style-three mb-25">
+                                <div class="icon">
+                                    <i class="far fa-handshake"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>Return Available</h5>
+                                    <p>Making it easy to return any items if you're not satisfied.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <!--=== Iconic Box Item ===-->
+                            <div class="iconic-box-item style-three mb-25">
+                                <div class="icon">
+                                    <i class="fas fa-sack-dollar"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>Secure Payment</h5>
+                                    <p>Shop with confidence knowing that our secure payment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--====== End Newsletter Sections  ======-->
+            <!--====== Start Footer Main  ======-->
+            <footer class="footer-main">
+                <!--=== Footer Bg Wrapper  ===-->
+                <div class="footer-bg-wrapper gray-bg">
+                    <!-- <div class="footer-shape shape-one"><span><img src="assets/images/footer/shape-1.png" alt="shape"></span></div> -->
+                    <!-- <svg id="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 75" fill="none">
+                        <path d="M1888.99 40.9061C1901.65 33.5506 1917.87 10.0999 1920 0.000160217L2.48878 0.110695C-18.5686 5.37782 100.829 31.8098 104.136 32.5745C126.908 37.8407 182.163 45.7157 196.02 59.5798C199.049 62.6106 214.802 72.2205 222.15 72.2205C228.696 72.2205 237.893 62.3777 241.388 59.5798C254.985 48.6964 317.621 62.748 338.154 55.5577C378.089 41.5729 396.6 21.3246 452.148 27.4033C469.55 29.3076 497.787 39.4201 516.467 36.022C529.695 33.6155 539.612 26.7953 554.369 23.9558C576.978 19.6057 584.786 12.6555 612.371 13.0388C629.18 13.2724 648.084 27.6499 658.6 33.8673C672.059 41.8242 673.268 47.0554 692.77 41.4805C711.954 35.9964 746.756 38.27 766.852 40.0441C779.483 41.1593 819.866 52.3111 831.458 47.8009C837.236 45.5528 840.64 43.5162 847.537 41.3369C869.486 34.402 905.397 34.0022 929.946 38.6077C947.224 41.8489 987.666 45.9365 999.721 52.9722C1005.16 56.1489 1004.78 60.6539 1010.35 63.6019C1018.09 67.7037 1021.56 68.3083 1029.01 67.4803C1042.77 65.9505 1045.29 61.7272 1056.86 58.1434C1090.94 47.59 1121.71 32.7536 1160.52 26.5415C1182.98 22.9457 1193.92 36.1401 1209.04 41.4806C1240.16 52.468 1262.92 57.9972 1299.78 49.2374C1331.73 41.6466 1369.13 23.3813 1405.73 23.3813C1419.55 23.3813 1427.96 32.734 1435.31 37.4585C1451.38 47.7919 1467 56.9943 1493.89 56.9943C1532.36 56.9943 1544.2 49.9853 1574.29 39.0386C1588.58 33.8384 1616.86 22.826 1635.73 23.3813C1651.4 23.8424 1656.97 43.603 1667.89 48.6629C1683.26 55.7835 1710.61 49.5903 1723.88 43.7789C1736.22 38.3771 1758.43 20.6985 1777.29 30.1327C1788.48 35.7274 1794.71 53.9926 1801.12 61.5909C1815.62 78.7687 1819.96 77.5598 1843.05 68.4859C1861.58 61.2028 1873.63 49.8315 1888.99 40.9061Z" fill="#FFFAF3"/>
+                    </svg> -->
+                    <!--=== Footer Widget Area  ===-->
+                    <div class="footer-widget-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-3 col-sm-6">
+                                    <!--=== Footer Widget  ===-->
+                                    <div class="footer-widget about-company-widget mb-40 wow fadeInUp">
+                                        <div class="widget-content">
+                                            <a href="index.html" class="footer-logo"><img src="assets/images/logo/logo-main.jpg" alt="Brand Logo"></a>
+                                            <p>Divyaa Shopee is an exciting brand we provide high quality shoes</p>
+                                            <ul class="ct-info-list mb-30">
+                                                <li>
+                                                    <i class="fas fa-envelope"></i>
+                                                    <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-phone-alt"></i>
+                                                    <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="social-link">
+                                                <li>
+                                                    <span>Find Us:</span>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-md-6 col-sm-6">
+                                    <!--=== Footer Widget ===-->
+                                    <div class="footer-widget footer-nav-widget mb-40 wow fadeInUp">
+                                        <div class="widget-content">
+                                            <h4 class="widget-title">Quick Links</h4>
+                                            <ul class="widget-menu">
+                                                <li><a href="index.html">Home</a></li>
+                                                <li><a href="men.html">Men</a></li>
+                                                <li><a href="women.html">Women</a></li>
+                                                <li><a href="kids.html">Kids</a></li>
+                                                
+                                                <li><a href="login.html">My Account</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-md-6 col-sm-6">
+                                    <!--=== Footer Widget ===-->
+                                    <div class="footer-widget footer-nav-widget mb-40 wow fadeInUp">
+                                        <div class="widget-content">
+                                            <h4 class="widget-title">Information</h4>
+                                            <ul class="widget-menu">
+                                                <li><a href="about-us.html">About</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                                <li><a href="shipping-policy.html">Shipping Policy</a></li>
+                                                <li><a href="return-refund.html">Returns & Refunds</a></li>
+                                                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                                                <li><a href="faqs.html">FAQs</a></li>
+                                               
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6">
+                                    <!--=== Footer Widget  ===-->
+                                    <div class="footer-widget footer-recent-post-widget mb-40 wow fadeInUp">
+                                        <h4 class="widget-title">Recent Post</h4>
+                                        <div class="widget-content">
+                                            <div class="recent-post-item">
+                                                <div class="thumb">
+                                                    <img src="assets/images/footer/recent-post-1.png" alt="post thumb">
+                                                </div>
+                                                <div class="content">
+                                                    <h4><a href="blog-details.html">Tips on Finding Affordable Fashion Gems Online</a></h4>
+                                                    <span><a href="blog-details.html">July 11, 2023</a></span>
+                                                </div>
+                                            </div>
+                                            <div class="recent-post-item">
+                                                <div class="thumb">
+                                                    <img src="assets/images/footer/recent-post-2.png" alt="post thumb">
+                                                </div>
+                                                <div class="content">
+                                                    <h4><a href="blog-details.html">Mastering the Art of Fashion E-commerce Marketing</a></h4>
+                                                    <span><a href="blog-details.html">JUly 11, 2024</a></span>
+                                                </div>
+                                            </div>
+                                            <div class="recent-post-item">
+                                                <div class="thumb">
+                                                    <img src="assets/images/footer/recent-post-3.png" alt="post thumb">
+                                                </div>
+                                                <div class="content">
+                                                    <h4><a href="blog-details.html">Must-Have Trends You Can Shop Online Now</a></h4>
+                                                    <span><a href="blog-details.html">July 11, 2024</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--=== Footer Copyright  ===-->
+                    <div class="copyright-area">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="copyright-text">
+                                        <p>&copy; 2024. All rights reserved by <span>Brighten Solutions</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="payment-method text-lg-end">
+                                        <a href="#"><img src="assets/images/footer/payment-method.png" alt="payment-method"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer><!--====== End Footer Main  ======-->
+        </main>
+        <!--====== Back To Top  ======-->
+        <!-- <a href="#" class="back-to-top" ><i class="far fa-angle-up"></i></a> -->
+        <!--====== Jquery js ======-->
+        <script src="assets/vendor/jquery-3.6.0.min.js"></script>
+        <!--====== Bootstrap js ======-->
+        <script src="assets/vendor/popper/popper.min.js"></script>
+        <!--====== Bootstrap js ======-->
+        <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!--====== Slick js ======-->
+        <script src="assets/vendor/slick/slick.min.js"></script>
+        <!--====== Magnific js ======-->
+        <script src="assets/vendor/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <!--====== Nice-select js ======-->
+        <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+        <!--====== Jquery Ui js ======-->
+        <script src="assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+        <!--====== SimplyCountdown js ======-->
+        <script src="assets/vendor/simplyCountdown.min.js"></script>
+        <!--====== Aos js ======-->
+        <script src="assets/vendor/aos/aos.js"></script>
+        <!--====== Main js ======-->
+        <script src="assets/js/theme.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                let currentIndex = 0; // Track the current slide index
+                const slides = $('.slides'); // Reference to slides
+                const totalSlides = $('.slide').length; // Total number of slides
+        
+                // Function to show the current slide
+                function showSlide(index) {
+                    const offset = -index * 100; // Calculate offset
+                    slides.css('transform', 'translateX(' + offset + 'vw)'); // Move slides
+                }
+        
+                // Click event for next button
+                $('#next').click(function() {
+                    currentIndex = (currentIndex + 1) % totalSlides; // Increment index
+                    showSlide(currentIndex); // Show next slide
+                });
+        
+                // Click event for previous button
+                $('#prev').click(function() {
+                    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Decrement index
+                    showSlide(currentIndex); // Show previous slide
+                });
+        
+                // Optional: Auto slide every 5 seconds
+                setInterval(function() {
+                    $('#next').click(); // Automatically click next
+                }, 5000);
+            });
+        </script>
+    </body>
+
+
+</html>
