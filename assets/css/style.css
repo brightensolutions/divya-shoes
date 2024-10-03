@@ -2214,7 +2214,7 @@ button {
   margin-bottom: 10px;
 }
 .product-item.style-three .product-info .product-meta span {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 500;
@@ -2226,12 +2226,14 @@ button {
 }
 .product-item.style-three .product-price .price {
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   font-family: var(--heading-font);
+  font-weight:600;
 }
 .product-item.style-three .product-price .price.prev-price {
   text-decoration: line-through;
   margin-bottom: 3px;
+  font-size:14px;
 }
 .product-item.style-four {
   display: flex;
@@ -5151,4 +5153,8 @@ button {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.product-item.style-three {
+  padding: 30px 0; /* Adjust the padding value as needed */
 }
