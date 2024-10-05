@@ -181,7 +181,7 @@ h6 {
   --secondary-light-color: #CC0D39;
   --primary-dark-color: #13172B;
   --white-color: #ffffff;
-  --text-color: #5E626F;
+  --text-color: #000000;
   --light-gray: #AEB0B6;
   --main-bg: #FFFFFF;
   --gray-bg: #F8f8f8;
@@ -2742,6 +2742,7 @@ button {
 }
 .product-gallery-area .product-thumb-slider .product-img img {
   border-radius: 10px;
+  border:1px solid #000;
 }
 
 .shop-details-wrapper .product-info span.sale {
@@ -2857,6 +2858,7 @@ button {
   padding: 8px 12px;
   font-size: 16px;
   border-radius: 6px;
+  color:#fff;
 }
 .shop-details-wrapper .product-info .special-features span:not(:last-child) {
   margin-right: 18px;
