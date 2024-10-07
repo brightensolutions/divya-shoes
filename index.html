@@ -34,61 +34,68 @@
         <!--====== Style css ======-->
         <link rel="stylesheet" href="assets/css/style.css">
         <style>
-            .slider {
-                width: 100vw; /* Full width of the viewport */
-                height: 70vh; /* Height for desktop: 70% of viewport height */
-                position: relative; /* Position for absolute children */
-                overflow: hidden; /* Hide overflow */
-            }
+           .banner-section {
+    display: flex;
+    flex-direction: column; /* Stack the slider and content vertically */
+}
 
-            .slides {
-                display: flex; /* Horizontal alignment */
-                transition: transform 0.5s ease; /* Smooth transition */
-            }
+.slider {
+    width: 100vw; /* Full width of the viewport */
+    position: relative; /* Position for absolute children */
+    overflow: hidden; /* Hide overflow */
+    display: flex; /* Allow flex properties */
+}
 
-            .slide {
-                min-width: 100vw; /* Each slide takes full width */
-                height: 100%; /* Slide height fills the slider's height */
-                position: relative; /* Positioning context for img */
-            }
+.slides {
+    display: flex; /* Horizontal alignment */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
 
-            .slide img {
-                width: 100%; /* Full width image */
-                height: 100%; /* Full height */
-                object-fit: cover; /* For desktop: Fill the slider without stretching */
-                display: block; /* Remove bottom space from images */
-            }
+.slide {
+    min-width: 100vw; /* Each slide takes full width */
+    display: flex; /* Use flexbox for centering the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
 
-            .controls {
-                position: absolute; /* Absolute positioning */
-                top: 50%; /* Center vertically */
-                width: 100%; /* Full width */
-                display: flex; /* Flex for controls */
-                justify-content: space-between; /* Space between controls */
-                transform: translateY(-50%); /* Center control vertically */
-            }
+.slide img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure it doesn't exceed the slider's height */
+    object-fit: cover; /* Fill the slider without stretching */
+    display: block; /* Remove bottom space from images */
+}
 
-            .control {
-                background-color: rgba(0, 0, 0, 0.5); /* Control background */
-                color: white; /* Control text color */
-                border: none; /* No border */
-                padding: 10px; /* Padding */
-                cursor: pointer; /* Pointer cursor */
-            }
+.controls {
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    width: 100%; /* Full width */
+    display: flex; /* Flex for controls */
+    justify-content: space-between; /* Space between controls */
+    transform: translateY(-50%); /* Center control vertically */
+}
 
-            /* Media query for mobile devices */
-            @media (max-width: 768px) {
-                .slider {
-                    height: 30vh; /* Height for mobile: 50% of viewport height */
-                }
-                .slide {
-                    height: 100%; /* Slide height fills the slider */
-                }
-                .slide img {
-                    object-fit: cover; /* Cover the slide without cropping, ensuring no white space */
-                    height: 100%; /* Ensure the image fills the height of the slider */
-                }
-            }
+.control {
+    background-color: rgba(0, 0, 0, 0.5); /* Control background */
+    color: white; /* Control text color */
+    border: none; /* No border */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .slider {
+        /* No fixed height, let it adjust based on content */
+    }
+}
+
+/* Styles for Tablet Devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .slider {
+        /* No fixed height, let it adjust based on content */
+    }
+}
 
         </style>
     </head>
